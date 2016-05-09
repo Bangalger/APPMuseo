@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>APP - Museo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:500,400,300,100" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="jquery.mobile-1.4.5.css"/>
+
+<script src="jquery-1.12.2.min.js"></script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+
+<div id="login" data-role="page">
+	<!--div data-role="header"></div-->
+	
+	<div data-role="content">
+		
+		<div class="ui-grid-solo">
+			<div class="ui-block-a">
+				<a href="#inicio" class="ui-btn btn-hpm-f">Iniciar Sesión con Facebook</a>
+			</div>
+		</div>
+	<div class="ui-grid-solo">
+		<div class="ui-block-a">
+			<a href="#inicio" class="ui-btn btn-hpm-g">Iniciar Sesión con Google+</a>
+		</div>
+	</div>
+<div class="ui-grid-solo">
+<a href="#" data-role="button" data-inline="true" data-mini="true" class="calvo">?</a>
+</div>
+
+	</div>
+
+	<div data-role="footer none">
+		<a href="#"><img class="logo-museo" src="images/marq.png"></a>
+	</div>
+
+</div>
+
+<div id="inicio" data-role="page">
+	<div data-role="header none">
+		<div>
+			<a href="#" data-role="button" data-inline="true" class="ui-btn-left">Edificios Cercanos</a>
+		</div>
+	</div>
+	<div data-role="content"></div>
+	<div data-role="footer" class="dale">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#inicio"><img alt="brujula" class="icono-navbar" src="images/iconos-navbar/icono-25.png"/></a></li>
+				<li><a href="#busqueda"><img alt="lupa" class="icono-navbar" src="images/iconos-navbar/icono-22.png"/></a></li>
+				<li><a href="#edificios"><img alt="edificio" class="icono-navbar" src="images/iconos-navbar/icono-23.png"/></a></li>
+				<li><a href="#perfil"><img alt="perfil" class="icono-navbar" src="images/iconos-navbar/icono-24.png"/></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="busqueda" data-role="page">
+	<div data-role="header">
+		<!--p>Busqueda</p-->
+	</div>
+	<div data-role="content">
+		<label for="search-basic">Busqueda</label>
+		<input type="search" name="search" id="search-basic" value=" "/>
+	</div>
+	<div data-role="footer" class="dale">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#inicio"><img alt="brujula" class="icono-navbar" src="images/iconos-navbar/icono-21.png"/></a></li>
+				<li><a href="#busqueda"><img alt="lupa" class="icono-navbar" src="images/iconos-navbar/icono-26.png"/></a></li>
+				<li><a href="#edificios"><img alt="edificio" class="icono-navbar" src="images/iconos-navbar/icono-23.png"/></a></li>
+				<li><a href="#perfil"><img alt="perfil" class="icono-navbar" src="images/iconos-navbar/icono-24.png"/></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="edificios" data-role="page">
+	<div data-role="header none"><p>Edificios</p></div>
+	<div data-role="content">
+		
+		<div data-role="tabs">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#one" class="tab-estado">Vistados</a></li>
+					<li><a href="#two" class="barra">Por Visitar</a></li>
+				</ul>
+			</div>
+
+			<div id="one" class="ui-content">
+				<table class="lista-edificios center">
+  					<tr>
+    					<td>Obelisco</td>
+    					<td>Hace 20 mins</td>
+  					</tr>
+				</table>
+			</div>
+
+			<div id="two" class="ui-content">
+				<table class="lista-edificios center">
+  					<tr>
+    					<td>Teatro Gran Rex</td>
+  					</tr>
+  					<tr>
+    					<td>Casa Rosada</td>
+  					</tr>
+  					<tr>
+    					<td>Centro Cultural Recoleta</td>
+  					</tr>
+  					<tr>
+    					<td>Planetario Galileo Gailei</td>
+  					</tr>
+  					<tr>
+    					<td>Museo de Arte LatinoAmericano</td>
+  					</tr>
+  					<tr>
+    					<td>Catedral Metropolitana de Buenos Aires</td>
+  					</tr>
+  					<tr>
+    					<td>Teatro Colon</td>
+  					</tr>
+  					<tr>
+    					<td>Floralis Genercia</td>
+  					</tr>
+  					<tr>
+    					<td>Piramide de Mayo</td>
+  					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+<div data-role="footer" class="dale">
+	<div data-role="navbar">
+			<ul>
+				<li><a href="#inicio"><img alt="brujula" class="icono-navbar" src="images/iconos-navbar/icono-21.png"/></a></li>
+				<li><a href="#busqueda"><img alt="lupa" class="icono-navbar" src="images/iconos-navbar/icono-22.png"/></a></li>
+				<li><a href="#edificios"><img alt="edificio" class="icono-navbar" src="images/iconos-navbar/icono-27.png"/></a></li>
+				<li><a href="#perfil"><img alt="perfil" class="icono-navbar" src="images/iconos-navbar/icono-24.png"/></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="perfil" data-role="page">
+	<div data-role="header none">
+		<div>
+			<a href="#" data-role="button" class="ui-btn-left"><img class="boton-home" src="images/home.png">Perfil</a>
+		</div>
+	</div>
+	<div data-role="content">
+
+		<h3>
+			<a href="popup?">
+				<img class="foto" src="images/ninakraviz-profile.png" alt="Nina Kraviz" />
+			</a>
+		</h3>
+
+		<h4>Nina Kraviz</h4>
+		
+		<ul class="lista-perfil">
+			<li class="lista-perfil"><a class="lista-perfil" href="#"><img alt="brujula" class="icono-perfil" src="images/iconos-perfil/icono-20.png"/>Ubicación Actual:</a></li>
+			<li class="lista-perfil"><a class="lista-perfil" href="#"><img alt="brujula" class="icono-perfil" src="images/iconos-perfil/icono-29.png"/>Distancia recorrida:</a></li>
+			<li class="lista-perfil"><a class="lista-perfil" href="#"><img alt="brujula" class="icono-perfil" src="images/iconos-perfil/icono-30.png"/>Notificaciones</a></li>
+			<li class="lista-perfil"><a class="lista-perfil" href="#"><img alt="brujula" class="icono-perfil" src="images/iconos-perfil/icono-31.png"/>Ayuda</a></li>
+			<li class="lista-perfil"><a class="lista-perfil" href="#"><img alt="brujula" class="icono-perfil" src="images/iconos-perfil/icono-32.png"/>Configuracion</a></li>
+		</ul>
+	</div>
+	<div data-role="footer" class="dale">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#inicio"><img alt="brujula" class="icono-navbar" src="images/iconos-navbar/icono-21.png"/></a></li>
+				<li><a href="#busqueda"><img alt="lupa" class="icono-navbar" src="images/iconos-navbar/icono-22.png"/></a></li>
+				<li><a href="#edificios"><img alt="edificio" class="icono-navbar" src="images/iconos-navbar/icono-23.png"/></a></li>
+				<li><a href="#perfil"><img alt="perfil" class="icono-navbar" src="images/iconos-navbar/icono-28.png"/></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>
